@@ -1,4 +1,4 @@
-# appcordovajade APP IOS
+# appcordovajade APP
 Criado em Cordova com Gulp.js.
 
 ## Instalação
