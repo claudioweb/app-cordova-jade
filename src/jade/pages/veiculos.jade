@@ -1,0 +1,22 @@
+section#cadastro_veiculo
+    .container
+        .row
+            .col-xs-12
+                .forms-consulta-cadastro
+                    .consulta-block#veiculo
+                        form#veiculo_form(action="" method="POST" role="form" onsubmit="return false;")
+                        
+                            .form-group
+                                label Chassi
+                                input#veiculo_chassi.form-control(type="text" placeholder="XXXXXXXXXXXXXXXXX")
+
+                            .form-group
+                                label Marca
+                                select#marcas_appcordovajade.form-control
+                                    option(value="") Escolher
+                                    
+                            .form-group
+                                label Modelo
+                                button#veiculo_modelo.add(style="width: 70%; margin: 0; font-weight: normal; padding-left: 7px;") Selecione um modelo
+                                
+                            button#add_veiculo_form.btn.btn-primary.btn-cadastro(type="submit" data-cadastro="#veiculo_form") Salvar Veículo

@@ -1,0 +1,103 @@
+section#cadastro
+	.container
+		.row
+			.col-xs-12
+				.forms-consulta-cadastro
+					.consulta-block#login
+						form#login_form(action="" method="POST" role="form" onsubmit="return false;")
+						
+							.form-group
+								label Usuário
+								input#login_identificador.form-control(type="number" placeholder="")
+							.form-group
+								label Senha
+								input#senha_identificador.form-control.digital-icon(type="password" placeholder="")
+							
+							button.btn.btn-primary.btn-cadastro(type="submit" data-cadastro="#formulario") Cadastrar contrato
+
+					.consulta-block#formulario
+						form#cadastro_form(action="" method="POST" role="form" onsubmit="return false;")
+							
+							legend Dados do Devedor
+							.form-group
+								label Pessoa
+								select#tipo_devedor.form-control
+									option(value="") Escolher
+									option(value="PESSOA_FISICA") Física
+									option(value="PESSOA_JURIDICA") Jurídica
+
+							.form-group
+								label Nome
+								input#nome_devedor.form-control(type="text" placeholder="")
+							.form-group
+								label CPF
+								input#cpf_devedor.form-control(type="number" placeholder="")		
+							.form-group
+								label Telefone
+								input#telefone_ddd.form-control(type="number" placeholder="DDD" style="width: 20%; border-right: 1px #ddd solid;")
+								input#telefone_devedor.form-control(type="number" placeholder="" style="width: 50%; padding-left: 7px;")
+
+							legend Endereço do Devedor
+							.form-group
+								label CEP
+								input#cep_devedor.form-control(type="number" placeholder="")
+							.form-group
+								label Bairro
+								input#bairro_devedor.form-control(type="text" placeholder="")
+							.form-group
+								label Logradouro
+								input#logradouro_devedor.form-control(type="text" placeholder="")
+							.form-group
+								label Número
+								input#numero_devedor.form-control(type="number" placeholder="")		
+							.form-group
+								label Complemento
+								input#complemento_devedor.form-control(type="text" placeholder="")
+							.form-group
+								label UF
+								select#uf_appcordovajade.form-control
+									option(value="") Escolher
+									option(value="AC") Acre
+									option(value="AL") Alagoas
+									option(value="AP") Amapá
+									option(value="AM") Amazonas
+									option(value="BA") Bahia
+									option(value="CE") Ceará
+									option(value="DF") Distrito Federal
+									option(value="ES") Espírito Santo
+									option(value="GO") Goiás
+									option(value="MA") Maranhão
+									option(value="MT") Mato Grosso
+									option(value="MS") Mato Grosso do Sul
+									option(value="MG") Minas Gerais
+									option(value="PA") Pará
+									option(value="PB") Paraíba
+									option(value="PR") Paraná
+									option(value="PE") Pernambuco
+									option(value="PI") Piauí
+									option(value="RJ") Rio de Janeiro
+									option(value="RN") Rio Grande do Norte
+									option(value="RS") Rio Grande do Sul
+									option(value="RO") Rondônia
+									option(value="RR") Roraima
+									option(value="SC") Santa Catarina
+									option(value="SP") São Paulo
+									option(value="SE") Sergipe
+									option(value="TO") Tocantins
+							.form-group
+								label Cidade
+								select#cidades_appcordovajade.form-control
+									option(value="") Escolher
+
+							legend Dados do Veículo
+							.form-group
+								button.add#add_veiculo Adicionar Veículo...
+
+							legend Dados de Financiamento
+							.form-group
+								label Tipo
+								select#tipo_financiamento.form-control
+									option(value="") Escolher
+							
+
+							button.btn.btn-primary#concluir_cadastro(type="submit") Concluir

@@ -1,0 +1,12 @@
+#qr {
+	display: none;
+	height: 90vh;
+	.espelho-eletronico {
+		transform: translateY(75%);
+		img {
+			margin: 0 auto;
+			display: block;
+			width: 150px;
+		}
+	}
+}

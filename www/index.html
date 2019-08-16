@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>appcordovajade</title>
+    <script src="js/libs/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="main" class="main">
+      <div id="loading"><svg xmlns="http://www.w3.org/2000/svg" class="lds-ellipsis" preserveAspectRatio="xMidYMid" style="background:0% 0%" viewBox="0 0 100 100"><circle cx="16" cy="50" r="10" fill="#ffffff"><animate attributeName="r" begin="0s" calcMode="spline" dur="1.5s" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" values="10;0;0;0;0"/><animate attributeName="cx" begin="0s" calcMode="spline" dur="1.5s" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" values="84;84;84;84;84"/></circle><circle cx="16" cy="50" r="10" fill="#ffffff"><animate attributeName="r" begin="-0.75s" calcMode="spline" dur="1.5s" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" values="0;10;10;10;0"/><animate attributeName="cx" begin="-0.75s" calcMode="spline" dur="1.5s" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" values="16;16;50;84;84"/></circle><circle cx="16" cy="50" r="10" fill="#ffffff"><animate attributeName="r" begin="-0.375s" calcMode="spline" dur="1.5s" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" values="0;10;10;10;0"/><animate attributeName="cx" begin="-0.375s" calcMode="spline" dur="1.5s" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" values="16;16;50;84;84"/></circle><circle cx="16" cy="50" r="10" fill="#ffffff"><animate attributeName="r" begin="0s" calcMode="spline" dur="1.5s" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" values="0;10;10;10;0"/><animate attributeName="cx" begin="0s" calcMode="spline" dur="1.5s" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" values="16;16;50;84;84"/></circle><circle cx="16" cy="50" r="10" fill="#ffffff"><animate attributeName="r" begin="0s" calcMode="spline" dur="1.5s" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" values="0;0;10;10;10"/><animate attributeName="cx" begin="0s" calcMode="spline" dur="1.5s" keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1" keyTimes="0;0.25;0.5;0.75;1" repeatCount="indefinite" values="16;16;16;50;84"/></circle></svg></div>
+      <div class="navbar navbar-default navbar-static-top navbar-appcordovajade">
+        <div class="container-fluid"><a href="#main" class="set-back"> <img src="img/arrow_left.png" style="width: 20px;" class="img-responsive"/></a><a class="navbar-brand">Consulta</a></div>
+      </div>
+      <div id="alert-modal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body"> <strong>Test 123345456</strong></div>
+            <div class="modal-footer">
+              <button type="button" data-dismiss="modal" class="btn btn-default btn-center">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-group">
+        <section id="consulta" data-script="Consulta">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-10 col-xs-offset-1">
+                <div class="menu-consulta">
+                  <div class="row">
+                    <div class="col-xs-6 button-all active"><a href="#chassi">Chassi</a></div>
+                    <div class="col-xs-6 button-all"><a href="#contrato">Contrato</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12">
+                <div class="forms-consulta">
+                  <div id="chassi" class="consulta-block">
+                    <form action="" method="POST" role="form" onsubmit="return false;" id="consulta_chassi" class="form_consulta">
+                      <legend>Informações do Veículo</legend>
+                      <div class="form-group">
+                        <label>Chassi</label>
+                        <input type="text" placeholder="XXXXXXXXXXXX" class="form-control consulta_chassi"/>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Buscar</button>
+                    </form>
+                  </div>
+                  <div id="contrato" class="consulta-block">
+                    <form action="" method="POST" role="form" onsubmit="return false;" id="consulta_credora" class="form_consulta">
+                      <legend>Informações do Contrato</legend>
+                      <div class="form-group">
+                        <label>Chassi</label>
+                        <input type="text" placeholder="XXXXXXXXXXXX" class="form-control consulta_chassi"/>
+                      </div>
+                      <div class="form-group">
+                        <label>CPF</label>
+                        <input type="text" placeholder="XXXXXXXXXXX" class="form-control consulta_cpf"/>
+                      </div>
+                      <div class="form-group">
+                        <label>Ins. Credora</label>
+                        <input type="text" placeholder="XXXXXXXXXXXXX" class="form-control consulta_credora"/>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Buscar</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div id="qr">
+          <div class="container-fluid">
+            <div class="espelho-eletronico"><img src="img/qr_cam.png"/></div>
+          </div>
+        </div>
+        <section id="cadastro">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="forms-consulta-cadastro">
+                  <div id="login" class="consulta-block">
+                    <form id="login_form" action="" method="POST" role="form" onsubmit="return false;">
+                      <div class="form-group">
+                        <label>Usuário</label>
+                        <input id="login_identificador" type="number" placeholder="" class="form-control"/>
+                      </div>
+                      <div class="form-group">
+                        <label>Senha</label>
+                        <input id="senha_identificador" type="password" placeholder="" class="form-control digital-icon"/>
+                      </div>
+                      <button type="submit" data-cadastro="#formulario" class="btn btn-primary btn-cadastro">Cadastrar contrato</button>
+                    </form>
+                  </div>
+                  <div id="formulario" class="consulta-block">
+                    <form id="cadastro_form" action="" method="POST" role="form" onsubmit="return false;">
+                      <legend>Dados do Devedor</legend>
+                      <div class="form-group">
+                        <label>Pessoa</label>
+                        <select id="tipo_devedor" class="form-control">
+                          <option value="">Escolher</option>
+                          <option value="PESSOA_FISICA">Física</option>
+                          <option value="PESSOA_JURIDICA">Jurídica</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label>Nome</label>
+                        <input id="nome_devedor" type="text" placeholder="" class="form-control"/>
+                      </div>
+                      <div class="form-group">
+                        <label>CPF</label>
+                        <input id="cpf_devedor" type="number" placeholder="" class="form-control"/>
+                      </div>
+                      <div class="form-group">
+                        <label>Telefone</label>
+                        <input id="telefone_ddd" type="number" placeholder="DDD" style="width: 20%; border-right: 1px #ddd solid;" class="form-control"/>
+                        <input id="telefone_devedor" type="number" placeholder="" style="width: 50%; padding-left: 7px;" class="form-control"/>
+                      </div>
+                      <legend>Endereço do Devedor</legend>
+                      <div class="form-group">
+                        <label>CEP</label>
+                        <input id="cep_devedor" type="number" placeholder="" class="form-control"/>
+                      </div>
+                      <div class="form-group">
+                        <label>Bairro</label>
+                        <input id="bairro_devedor" type="text" placeholder="" class="form-control"/>
+                      </div>
+                      <div class="form-group">
+                        <label>Logradouro</label>
+                        <input id="logradouro_devedor" type="text" placeholder="" class="form-control"/>
+                      </div>
+                      <div class="form-group">
+                        <label>Número</label>
+                        <input id="numero_devedor" type="number" placeholder="" class="form-control"/>
+                      </div>
+                      <div class="form-group">
+                        <label>Complemento</label>
+                        <input id="complemento_devedor" type="text" placeholder="" class="form-control"/>
+                      </div>
+                      <div class="form-group">
+                        <label>UF</label>
+                        <select id="uf_appcordovajade" class="form-control">
+                          <option value="">Escolher</option>
+                          <option value="AC">Acre</option>
+                          <option value="AL">Alagoas</option>
+                          <option value="AP">Amapá</option>
+                          <option value="AM">Amazonas</option>
+                          <option value="BA">Bahia</option>
+                          <option value="CE">Ceará</option>
+                          <option value="DF">Distrito Federal</option>
+                          <option value="ES">Espírito Santo</option>
+                          <option value="GO">Goiás</option>
+                          <option value="MA">Maranhão</option>
+                          <option value="MT">Mato Grosso</option>
+                          <option value="MS">Mato Grosso do Sul</option>
+                          <option value="MG">Minas Gerais</option>
+                          <option value="PA">Pará</option>
+                          <option value="PB">Paraíba</option>
+                          <option value="PR">Paraná</option>
+                          <option value="PE">Pernambuco</option>
+                          <option value="PI">Piauí</option>
+                          <option value="RJ">Rio de Janeiro</option>
+                          <option value="RN">Rio Grande do Norte</option>
+                          <option value="RS">Rio Grande do Sul</option>
+                          <option value="RO">Rondônia</option>
+                          <option value="RR">Roraima</option>
+                          <option value="SC">Santa Catarina</option>
+                          <option value="SP">São Paulo</option>
+                          <option value="SE">Sergipe</option>
+                          <option value="TO">Tocantins</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label>Cidade</label>
+                        <select id="cidades_appcordovajade" class="form-control">
+                          <option value="">Escolher</option>
+                        </select>
+                      </div>
+                      <legend>Dados do Veículo</legend>
+                      <div class="form-group">
+                        <button id="add_veiculo" class="add">Adicionar Veículo...</button>
+                      </div>
+                      <legend>Dados de Financiamento</legend>
+                      <div class="form-group">
+                        <label>Tipo</label>
+                        <select id="tipo_financiamento" class="form-control">
+                          <option value="">Escolher</option>
+                        </select>
+                      </div>
+                      <button id="concluir_cadastro" type="submit" class="btn btn-primary">Concluir</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="cadastro_veiculo">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="forms-consulta-cadastro">
+                  <div id="veiculo" class="consulta-block">
+                    <form id="veiculo_form" action="" method="POST" role="form" onsubmit="return false;">
+                      <div class="form-group">
+                        <label>Chassi</label>
+                        <input id="veiculo_chassi" type="text" placeholder="XXXXXXXXXXXXXXXXX" class="form-control"/>
+                      </div>
+                      <div class="form-group">
+                        <label>Marca</label>
+                        <select id="marcas_appcordovajade" class="form-control">
+                          <option value="">Escolher</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label>Modelo</label>
+                        <button id="veiculo_modelo" style="width: 70%; margin: 0; font-weight: normal; padding-left: 7px;" class="add">Selecione um modelo</button>
+                      </div>
+                      <button id="add_veiculo_form" type="submit" data-cadastro="#veiculo_form" class="btn btn-primary btn-cadastro">Salvar Veículo</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="cadastro_modelo">
+          <div class="container">
+            <div class="row">
+              <div style="padding-bottom: 80px;" class="col-xs-12">
+                <div class="forms-consulta-cadastro">
+                  <div id="formulario" class="consulta-block">
+                    <form id="modelo_form" action="" method="POST" role="form" onsubmit="return false;">
+                      <div id="modelos_appcordovajade" class="form-group"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer id="footer-appcordovajade" data-script="Footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-4 button-footer active"><a href="#" data-group="#consulta" data-brand="Consulta"><img src="img/consulta.png" class="img-responsive"/></a></div>
+          <div class="col-xs-4 button-footer"> <a href="#" data-group="#qr" data-brand="Espelho Eletrônico"><img src="img/qr.png" class="img-responsive"/></a></div>
+          <div class="col-xs-4 button-footer"> <a href="#" data-group="#cadastro" data-brand="Cadastro"><img src="img/cadastro.png" class="img-responsive"/></a></div>
+        </div>
+      </div>
+    </footer>
+    <link rel="stylesheet" href="js/libs/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <script src="cordova.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/jquery.cookie.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+section#consulta(data-script="Consulta")
+	.container
+		.row
+			.col-xs-10.col-xs-offset-1
+				.menu-consulta
+					.row
+						.col-xs-6.button-all.active
+							a(href="#chassi") Chassi
+						.col-xs-6.button-all
+							a(href="#contrato") Contrato
+
+			.col-xs-12
+				.forms-consulta
+					.consulta-block#chassi
+						form.form_consulta(action="" method="POST" role="form" onsubmit="return false;" id="consulta_chassi")
+							legend Informações do Veículo
+						
+							.form-group
+								label Chassi
+								input.form-control.consulta_chassi(type="text" placeholder="XXXXXXXXXXXX")
+						
+							
+							button.btn.btn-primary(type="submit") Buscar
+
+					.consulta-block#contrato
+						form.form_consulta(action="" method="POST" role="form" onsubmit="return false;" id="consulta_credora")
+							legend Informações do Contrato
+						
+							.form-group
+								label Chassi
+								input.form-control.consulta_chassi(type="text" placeholder="XXXXXXXXXXXX")
+							.form-group
+								label CPF
+								input.form-control.consulta_cpf(type="text" placeholder="XXXXXXXXXXX")
+							.form-group
+								label Ins. Credora
+								input.form-control.consulta_credora(type="text" placeholder="XXXXXXXXXXXXX")
+						
+							
+							button.btn.btn-primary(type="submit") Buscar

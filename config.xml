@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.appcordovajade" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Cordova</name>
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#0076ff" />
+    <preference name="Fullscreen" value="false" />
+    <preference name="android-targetSdkVersion" value="28" />
+    <preference name="phonegap-version" value="cli-7.1.0" />
+    <preference name="pgb-builder-version" value="2" />
+    <feature name="TouchID">
+        <param name="ios-package" value="TouchID" />
+    </feature>
+    <description>
+       Aplicativo hibrido utilizando somente Html/css/Javascript
+    </description>
+    <author email="claudiocfrabelo@gmail.com" href="https://claudioweb.com.br">
+        claudioweb
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon density="ldpi" src="res/icon/android/icon-36-ldpi.png" />
+        <icon density="mdpi" src="res/icon/android/icon-48-mdpi.png" />
+        <icon density="hdpi" src="res/icon/android/icon-72-hdpi.png" />
+        <icon density="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <preference name="UseLegacySwiftLanguageVersion" value="true" />
+        <preference name="UseSwiftLanguageVersion" value="5" />
+    </platform>
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
+    <plugin name="cordova-plugin-statusbar" spec="^2.4.3" />
+    <engine name="ios" spec="~4.5.5" />
+    <plugin name="cordova-plugin-tabrisjs-qrgen" spec="^1.0.8" />
+    <engine name="android" spec="~7.1.4" />
+    <engine name="browser" spec="~5.0.4" />
+</widget>

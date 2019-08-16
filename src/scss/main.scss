@@ -1,0 +1,80 @@
+body {
+	background: transparent !important;
+	
+	#loading {
+		display: none;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.9);
+		z-index: 999;
+		
+		svg {
+			display: table;
+			margin: 20% auto;
+			width: 50%;
+		}
+	}
+	
+	a, a:focus, a:hover {
+		text-decoration: none;
+	}
+	
+	.btn-center {
+		width: 100%;
+		border: 0 none;
+		font-weight: bold;
+		font-size: 16px;
+		color: #0076ff;
+		background: transparent;
+	}
+	
+	.set-back {
+		position: absolute;
+		top: 0px;
+		font-size: 25px;
+		color: #fff;
+		left: 3px;
+		font-weight: bold;
+		padding: 16px 20px;
+		display: block;
+		z-index: 2;
+		font-family: -webkit-body;
+		display: none;
+	}
+	
+	.modal-dialog {
+		margin-top: 40%;
+		.modal-content {
+			background: #E2E8E6;
+			.modal-body {
+				text-align: center;
+				strong {
+					font-size: 18px;
+				}
+			}
+			.modal-footer {
+				padding: 5px;
+			}
+		}
+	}
+	
+	@import 'navbar';
+	
+	.main {
+		
+		.main-group {
+			section {
+				padding: 15px 0;
+				background-image: url('../img/bg-appcordovajade.png');
+				background-repeat: repeat-y;
+				background-size: cover;
+				min-height: 90vh;
+			}
+		}
+		
+		@import 'consulta', 'qr', 'cadastro';
+	}
+	
+	@import 'footer';
+}

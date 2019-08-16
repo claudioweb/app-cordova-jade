@@ -1,0 +1,16 @@
+.navbar-appcordovajade {
+	background: #0076ff;
+	border: 0 none;
+	margin-bottom: 0px;
+	.container-fluid {
+		z-index: 1;
+		display: block;
+		a.navbar-brand {
+			width: 100%;
+			background-color: transparent;
+			color: #fff;
+			font-size: 22px;
+			text-align: center;
+		}
+	}
+}

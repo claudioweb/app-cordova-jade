@@ -1,0 +1,97 @@
+#consulta, #cadastro, #cadastro_veiculo, #cadastro_modelo {
+	display: block;
+	.menu-consulta {
+		div.button-all {
+			border: 1px #0076ff solid;
+			a {
+				display: block;
+				width: 100%;
+				height: 30px;
+				text-align: center;
+				padding: 4px 0;
+				font-size: 18px;
+				color: #fff;
+
+			}
+			&:nth-child(1){
+				border-top-left-radius: 5px;
+				border-bottom-left-radius: 5px;
+			}
+			&:nth-child(2){
+				border-top-right-radius: 5px;
+				border-bottom-right-radius: 5px;
+			}
+			&.active {
+				background: #0076ff;
+			}	
+		}
+		margin-bottom: 15px;
+	}
+
+	.forms-consulta, .forms-consulta-cadastro {
+		div.consulta-block {
+			display: none;
+
+			.form-group {
+				margin-bottom: 15px;
+				height: 45px;
+				display: block;
+				position: relative;
+				clear: both;
+			}
+
+			legend {
+				color: #fff;
+				font-size: 18px;
+				font-weight: normal;
+				margin-top: 30px;
+			}
+
+			label {
+				margin: 20px 15px;
+				width: 30%;
+				float: left;
+				background: #fff;
+				height: 60px;
+				margin: 0;
+				padding: 20px 10px;
+				text-align: left;
+				border-bottom: 1px #c8c7cc solid;
+				font-size: 13px;
+			}
+
+			button {
+				width: 100%;
+				height: 40px;
+				font-size: 20px;
+				margin-top: 15px;
+			}
+
+			input, select, button.add {
+				border: 0 none;
+				box-shadow: none;
+				height: 60px;
+				font-size: 16px;
+				width: 70%;
+				float: left;
+				border-radius: 0;
+				padding: 6px 0;
+				background: #fff;
+				border-bottom: 1px #c8c7cc solid;
+			}
+
+			button.add, select.add {
+				width: 100%;
+				text-align: left;
+				padding: 0 15px;
+				font-size: 15px !important;
+				font-weight: bold;
+				margin-bottom: 15px;
+			}
+
+			&:first-child {
+				display: block;
+			}
+		}
+	}
+}

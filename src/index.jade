@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="pt-BR")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1")
+		meta(http-equiv="x-ua-compatible" content="ie=edge")
+
+		title appcordovajade
+
+		script(src="js/libs/jquery.min.js")
+
+	body()
+
+		div#main.main
+			include jade/components/loading
+			include jade/components/navbar
+			include jade/components/alert
+
+			.main-group
+				include jade/pages/consulta
+				include jade/pages/qr
+				include jade/pages/cadastro
+				include jade/pages/veiculos
+				include jade/pages/modelos
+
+		include jade/components/footer
+
+		//- Insert stylesheets here
+		link(rel="stylesheet" href="js/libs/bootstrap.min.css")
+		link(rel="stylesheet" href="css/style.min.css")
+
+		//- Insert scripts here
+		script(src="cordova.js")
+		script(src="js/libs/bootstrap.min.js")
+		script(src="js/libs/jquery.cookie.min.js")
+		script(src="js/main.min.js")
