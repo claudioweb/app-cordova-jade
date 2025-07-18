@@ -13,7 +13,7 @@
     "browser-sync": "^2.26.3",
     "cheerio": "^0.22.0",
     "cordova-android": "^7.1.4",
-    "cordova-browser": "^5.0.4",
+    "cordova-browser": "^7.0.0",
     "cordova-ios": "^4.5.5",
     "cordova-plugin-add-swift-support": "^2.0.2",
     "cordova-plugin-android-fingerprint-auth": "^1.5.0",
