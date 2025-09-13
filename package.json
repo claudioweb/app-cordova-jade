@@ -10,7 +10,7 @@
   "author": "ClaudioWEB",
   "license": "Apache-2.0",
   "dependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^3.0.4",
     "cheerio": "^0.22.0",
     "cordova-android": "^7.1.4",
     "cordova-browser": "^5.0.4",
